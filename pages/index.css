@@ -188,3 +188,102 @@
   font-family: "Inter", "Arial", sans-serif;
   font-weight: 500;
 }
+
+.reservation {
+  background-color: #d9e7ff;
+  background-image: url("../images/background_reservation.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  /* Margen superior 100px e inferior 120px para eliminar el hueco visual */
+  padding: 100px 0 120px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.reservation__title {
+  font-family: "Inter", "Arial", sans-serif;
+  font-weight: 500;
+  font-size: 44px;
+  line-height: 52px; /* */
+  margin: 0 0 80px; /* 80px de espacio hacia el formulario */
+}
+
+/* Controla el ancho máximo del bloque sin afectar los estilos del form */
+.reservation__form {
+  max-width: 385px;
+  width: 100%;
+}
+
+/* --- Bloque Independiente: Form --- */
+.form__fieldset {
+  border: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.form__label {
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px; /* */
+  margin-bottom: 8px; /* */
+}
+
+.form__input {
+  font-family: "Inter", sans-serif;
+  font-size: 20px; /* */
+  line-height: 30px; /* */
+  padding: 15px;
+  border: 1px solid #000000;
+  border-radius: 4px; /* */
+  margin-bottom: 32px; /* Espacio entre campos */
+  box-sizing: border-box; /* Evita que el padding agrande el campo */
+  width: 100%;
+}
+
+/* Color específico para el placeholder */
+.form__input::placeholder {
+  color: #838383;
+}
+
+.form__button {
+  background-color: #2f80ed;
+  color: #ffffff;
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px; /* */
+  border: none;
+  border-radius: 4px; /* */
+  padding: 15px;
+  height: 60px; /* */
+  cursor: pointer;
+  margin-top: 32px;
+  transition: opacity 0.3s ease;
+}
+
+.form__button:hover {
+  opacity: 0.7; /* Opacidad al 70% en hover */
+}
+
+.form__checkbox-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px; /* Espacio entre check y texto */
+  margin-top: 32px;
+}
+
+.form__checkbox {
+  width: 20px;
+  height: 20px;
+  border-radius: 2px; /* */
+}
+
+.form__label_type_checkbox {
+  margin-bottom: 0;
+}
